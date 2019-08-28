@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09801856-B47F-45A0-A01F-72E28DA7B225}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game</RootNamespace>
+    <AssemblyName>Game</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BonusGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonusGame.Designer.cs">
+      <DependentUpon>BonusGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boss.Designer.cs">
+      <DependentUpon>Boss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClickerGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClickerGame.Designer.cs">
+      <DependentUpon>ClickerGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlappyBird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlappyBird.Designer.cs">
+      <DependentUpon>FlappyBird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MazeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazeGame.Designer.cs">
+      <DependentUpon>MazeGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryGame.Designer.cs">
+      <DependentUpon>MemoryGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShootingGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShootingGallery.Designer.cs">
+      <DependentUpon>ShootingGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stick.Designer.cs">
+      <DependentUpon>Stick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StickGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StickGame.Designer.cs">
+      <DependentUpon>StickGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BonusGame.resx">
+      <DependentUpon>BonusGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boss.resx">
+      <DependentUpon>Boss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClickerGame.resx">
+      <DependentUpon>ClickerGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlappyBird.resx">
+      <DependentUpon>FlappyBird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MazeGame.resx">
+      <DependentUpon>MazeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryGame.resx">
+      <DependentUpon>MemoryGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShootingGallery.resx">
+      <DependentUpon>ShootingGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stick.resx">
+      <DependentUpon>Stick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StickGame.resx">
+      <DependentUpon>StickGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventurebeginningimage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventureQuote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdventureQuote2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepyForest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\four.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seven.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\six.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ten.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy bird knight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy bird sword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy bird fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini boss minion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini boss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy bird knight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss battle 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss battle 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss battle 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cronos background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elmo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgound 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shooting background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sticks background.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
